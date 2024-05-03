@@ -20,8 +20,6 @@ test("division 9 / 3 to equal 3", () => {
   expect(division(9, 3)).toBe(3);
 });
 
-
 test("porcentaje 20 * 100 / 100 to equal 20", () => {
-    expect(porcentaje(100, 20)).toBe(20);
-  });
-  
+  expect(porcentaje(100, 20)).toBe(20);
+});
