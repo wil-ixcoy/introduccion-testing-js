@@ -8,6 +8,7 @@
     "start:dev": "DEBUG=app:* nodemon src/index.js",
     "start:prod": "NODE_ENV=production node src/index.js",
     "test": "jest",
+    "test:e2e": "jest --config ./e2e/jest-e2e.json --forceExit",
     "lint": "eslint src/**",
     "lint:fix": "eslint src/** --fix"
   },
@@ -24,9 +25,11 @@
     "@faker-js/faker": "^8.4.1",
     "@types/jest": "^29.5.12",
     "eslint": "^8.10.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.25.4",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.3",
     "jest": "^27.5.1",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "supertest": "^7.0.0"
   }
 }
