@@ -13,7 +13,7 @@ describe('Test for books endpoints', () => {
 
     beforeAll( async () => {
         app = createApp();
-        server = app.listen(3004)
+        server = app.listen(3005)
 
         //conexion a la bd de pruebas 
         const client = new MongoClient(MONGO_URI,{
@@ -26,9 +26,8 @@ describe('Test for books endpoints', () => {
 
     afterAll( async () => {
         await server.close();
-        await database.close();
         //una vez termine de usarse la bd se borra
-        await database.dropDatabase()
+        await database.dropDatabase();
     });
 
     describe('test for [GET] /api/v1/books', () => {
