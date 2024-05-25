@@ -6,7 +6,6 @@ on:
       - "./api/**"
       - ".github/workflows/api-ci.yml"
 
-
 defaults:
   run:
     working-directory: ./api
